@@ -43,7 +43,7 @@
                     <div class="menu">
                         <ul>
                             <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
-                            <li><a href="{{ route('home') }}"><i class="fa fa-user"></i> Todo</a></li>
+                            <li><a href="{{ route('todo.home') }}"><i class="fa fa-user"></i> Todo</a></li>
                             <li><a href="all-user.html"><i class="fas fa-user-circle"></i> Users</a></li>
                             <li> <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
                             <i class="fas fa-sign-out-alt"></i>  Logout</a></li> 

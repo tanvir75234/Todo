@@ -20,7 +20,10 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('dashboard/todo', [TodoController::class, 'index'])->name('todo.home');
 Route::get('dashboard/todo/add', [TodoController::class, 'add'])->name('todo.add');
-Route::get('dashboard/todo/update', [TodoController::class, 'add'])->name('todo.update');
+Route::get('dashboard/todo/view', [TodoController::class, 'view'])->name('todo.view');
+Route::post('dashboard/todo/submit', [TodoController::class, 'insert'])->name('todo.insert');
+Route::get('dashboard/todo/update', [TodoController::class, 'update'])->name('todo.update');
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 require __DIR__.'/auth.php';
